@@ -1,0 +1,2 @@
+# Fastify Custom Healthcheck
+
