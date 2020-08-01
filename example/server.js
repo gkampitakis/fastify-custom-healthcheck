@@ -19,7 +19,7 @@ fastify.register(customHealthCheck, {
     });
 
     fastify.addHealthCheck('async', () => {
-      return new Promise((resolve) => setTimeout(resolve, 5000));
+      return new Promise((resolve) => setTimeout(resolve, 2000));
     });
 
     fastify.addHealthCheck('mongo', async () => {

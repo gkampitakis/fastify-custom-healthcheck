@@ -1,6 +1,7 @@
 # Fastify Custom Healthcheck
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
+[![Build Status](https://travis-ci.org/gkampitakis/fastify-custom-healthcheck.svg?branch=master)](https://travis-ci.org/gkampitakis/fastify-custom-healthcheck)
 
 `fastify-custom-healthcheck` is a plugin for creating a health route with custom evaluations.
 
@@ -53,7 +54,9 @@ fastify.addCustomHealthCheck(label, () => {});
 -   `path`: path where you can reach health check route.
     -   default value: `'/health'`.
 -   `info`: object where you can define custom information you would like to include in healthcheck response object.
-
+-   exposeFailure: Flag that enables additional information to be presented in health check object when a check fails.
+    -   default value: `false`
+ 
 ### decorator options
 
 ## Acknowledgements
