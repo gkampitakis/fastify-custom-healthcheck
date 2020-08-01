@@ -3,5 +3,5 @@ export interface addHealthCheck {
 }
 
 interface evaluation {
-  evaluation: unknown
+  value: unknown
 }

@@ -34,9 +34,9 @@ fastify.register(customHealthCheck, {
 
     fastify.addHealthCheck('evaluationCheck', () => {
       return new Promise((resolve) => {
-        setTimeout(() => resolve(false), 2000);
+        setTimeout(() => resolve(true), 2000);
       });
-    }, { evaluation: true });
+    }, { value: false });
   });
 
 fastify.listen(5000, () => {
