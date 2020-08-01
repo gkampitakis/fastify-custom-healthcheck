@@ -27,7 +27,7 @@ fastify.register(customHealthCheck, options).then(() => {
     });
 });
 
-fastify.lister(3000);
+fastify.listen(3000);
 ```
 
 ## API
@@ -54,12 +54,12 @@ fastify.register(customHealthCheck, {
 After registering plugin you can use the decorator for adding custom health checks.
 
 ```javascript
-fastify.addCustomHealthCheck(label, () => {}, options);
+fastify.addCustomHealthCheck(label, () => {}, { value: true });
 ```
 
 ### decorator options
 
-- evaluation: If you add on `addHealthCheck` a value, when computing health check an equality check happens between evaluation and the value returned by the health check function. If the values are different health check fails.
+-   value: If you add on `addHealthCheck` a value, when computing health check an equality check happens between evaluation and the value returned by the health check function. If the values are different health check fails.
 
 ## Acknowledgements
 
