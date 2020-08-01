@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "npm run lint",
+    "test": "npm run lint && jest lib/**/*.js",
     "clean": "rimraf /coverage",
     "lint": "semistandard | snazzy"
   },
@@ -19,8 +19,13 @@
   "license": "ISC",
   "files": [
     "lib/**/*",
-    "!/**/*.test.*"
+    "!lib/tests/**/*"
   ],
+  "semistandard": {
+    "env": [
+      "jest"
+    ]
+  },
   "dependencies": {
     "fastify-plugin": "^2.0.3"
   },
@@ -36,6 +41,26 @@
     "semantic-release": "^17.1.1",
     "semistandard": "^14.2.3",
     "snazzy": "^8.0.0"
+  },
+  "jest": {
+    "verbose": true,
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.js$",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*/index.js",
+      "!src/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
