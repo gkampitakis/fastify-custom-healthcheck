@@ -41,14 +41,6 @@ fastify.register(customHealthCheck, {
 });
 ```
 
-### Decorator
-
-After registering plugin you can use the decorator for adding custom health checks.
-
-```javascript
-fastify.addCustomHealthCheck(label, () => {});
-```
-
 ### register options
 
 -   `path`: path where you can reach health check route.
@@ -56,8 +48,18 @@ fastify.addCustomHealthCheck(label, () => {});
 -   `info`: object where you can define custom information you would like to include in healthcheck response object.
 -   exposeFailure: Flag that enables additional information to be presented in health check object when a check fails.
     -   default value: `false`
- 
+
+### Decorator
+
+After registering plugin you can use the decorator for adding custom health checks.
+
+```javascript
+fastify.addCustomHealthCheck(label, () => {}, options);
+```
+
 ### decorator options
+
+- evaluation: If you add on `addHealthCheck` a value, when computing health check an equality check happens between evaluation and the value returned by the health check function. If the values are different health check fails.
 
 ## Acknowledgements
 

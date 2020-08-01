@@ -7,7 +7,8 @@ fastify.register(customHealthCheck, {
   path: '/custom/path/health',
   info: {
     example: 'Custom Info'
-  }
+  },
+  exposeFailure: true
 })
   .then(() => {
     fastify.addHealthCheck('random', () => {
@@ -30,6 +31,12 @@ fastify.register(customHealthCheck, {
     });
 
     fastify.addHealthCheck('sync', () => true);
+
+    fastify.addHealthCheck('evaluationCheck', () => {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(false), 2000);
+      });
+    }, { evaluation: true });
   });
 
 fastify.listen(5000, () => {
