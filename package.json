@@ -8,7 +8,8 @@
     "test": "npm run lint && jest lib/**/*.js",
     "clean": "rimraf /coverage",
     "lint": "semistandard | snazzy",
-    "example": "nodemon example/server.js"
+    "example": "nodemon example/server.js",
+    "release": "semantic-release"
   },
   "keywords": [
     "fastify",

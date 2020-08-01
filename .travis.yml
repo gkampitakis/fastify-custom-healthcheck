@@ -1,19 +1,19 @@
-# language: node_js
-# node_js:
-#   - 10.19
+language: node_js
+node_js:
+  - node
 
-# branches:
-#   only:
-#     - master
-#     - type=pull_request
+branches:
+  only:
+    - master
+    - type=pull_request
 
-# before_install:
-#   - npm install
+before_install:
+  - npm install
 
-# jobs:
-#   include:
-#     - stage: release
-#       deploy:
-#         provider: script
-#         skip_cleanup: true
-#         script: npm run release
+jobs:
+  include:
+    - stage: release
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script: npm run release
