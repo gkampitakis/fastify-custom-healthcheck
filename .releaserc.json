@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "git@github.com:gkampitakis/email-client.git",
+  "repositoryUrl": "git@github.com:gkampitakis/fastify-custom-healthcheck.git",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
