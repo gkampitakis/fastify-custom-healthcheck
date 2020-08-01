@@ -1,3 +1,5 @@
+## [1.0.1](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.0.0...v1.0.1) (2020-08-01)
+
 # 1.0.0 (2020-08-01)
 
 
