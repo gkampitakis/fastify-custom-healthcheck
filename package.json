@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Fastify plugin that allows to add custom health checks in your server",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "format": "prettier --write ./src/**/*",
-    "eslint": "eslint src/**/*.js",
-    "clean": "rimraf /coverage"
+    "clean": "rimraf /coverage",
+    "lint": "semistandard | snazzy"
   },
   "keywords": [
     "fastify",
@@ -18,7 +19,8 @@
   "author": "Georgios Kampitakis",
   "license": "ISC",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "!/**/*.test.*"
   ],
   "dependencies": {
     "fastify-plugin": "^2.0.3"
@@ -28,12 +30,15 @@
     "@commitlint/config-conventional": "^9.1.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "fastify": "^3.1.1",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.1.1"
+    "semantic-release": "^17.1.1",
+    "semistandard": "^14.2.3",
+    "snazzy": "^8.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
