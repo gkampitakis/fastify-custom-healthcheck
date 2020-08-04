@@ -60,6 +60,35 @@ fastify.addCustomHealthCheck(label, () => {}, { value: true });
 
 -   value: If you add on `addHealthCheck` a value, when computing health check an equality check happens between evaluation and the value returned by the health check function. If the values are different health check fails.
 
+## Example response 
+
+```json
+{
+  "healthChecks": {
+    "mongo": {
+      "status": "FAIL",
+      "reason": "MongoNetworkError: failed to connect to server [localhost:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1144:16) {\n  name: 'MongoNetworkError'\n}]"
+    },
+    "kafka": "HEALTHY",
+    "redis": "HEALTHY" 
+  },
+  "stats": {
+    "creationTime": "2020-08-04T19:16:29.766Z",
+    "uptime": 0.303361107,
+    "memory": {
+      "rss": 50102272,
+      "heapTotal": 29270016,
+      "heapUsed": 16499104,
+      "external": 20754444,
+      "arrayBuffers": 19273278
+    }
+  },
+  "info": {
+    "example": "Response",
+  }
+}
+```
+
 ## Acknowledgements
 
 This module is inspired by [server-health](https://www.npmjs.com/package/server-health) and the need of having this functionality in fastify.
