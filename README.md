@@ -5,7 +5,6 @@
 
 `fastify-custom-healthcheck` is a plugin for creating a health route with custom evaluations.
 
-Supports Fastify versions `3.x`.
 
 ## Install
 
