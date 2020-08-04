@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.0.1...v1.1.0) (2020-08-04)
+
+
+### Bug Fixes
+
+* remove sensitive info from payload ([0603632](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/06036324127c5db16db0b70e78f9d783d8717d7a))
+
+
+### Features
+
+* remove lock to specific fastify service ([1d9296b](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/1d9296b975999dc5108f212f4ca9c0fe80264467))
+
 ## [1.0.1](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.0.0...v1.0.1) (2020-08-01)
 
 # 1.0.0 (2020-08-01)
