@@ -7,6 +7,9 @@ branches:
     - master
     - type=pull_request
 
+cache:
+  npm: false
+
 before_install:
   - npm install
 
