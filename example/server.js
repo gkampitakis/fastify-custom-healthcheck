@@ -2,11 +2,15 @@ const fastify = require('fastify')();
 const MongoClient = require('mongodb').MongoClient;
 const customHealthCheck = require('../lib');
 const url = 'mongodb://localhost:27017';
+const _package = require('../package.json');
 
 fastify.register(customHealthCheck, {
   path: '/custom/path/health',
   info: {
-    example: 'Custom Info'
+    example: 'Custom Info',
+    env: process.env.NODE_ENV,
+    name: _package.name,
+    version: _package.version
   },
   exposeFailure: true
 })
