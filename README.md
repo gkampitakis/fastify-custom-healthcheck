@@ -1,6 +1,6 @@
 # Fastify Custom Healthcheck
 
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/standard/semistandard)
 [![Build Status](https://travis-ci.org/gkampitakis/fastify-custom-healthcheck.svg?branch=master)](https://travis-ci.org/gkampitakis/fastify-custom-healthcheck)
 
 `fastify-custom-healthcheck` is a plugin for creating a health route with custom evaluations.
