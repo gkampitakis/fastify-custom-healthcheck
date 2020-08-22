@@ -48,15 +48,16 @@
     "snazzy": "^8.0.0"
   },
   "jest": {
+    "collectCoverage": true,
     "verbose": true,
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.js$",
     "moduleFileExtensions": [
       "js"
     ],
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/**/*/index.js",
-      "!src/index.js"
+      "lib/src/**/*.js",
+      "!lib/src/**/*/index.js",
+      "!lib/src/index.js"
     ],
     "coverageThreshold": {
       "global": {
