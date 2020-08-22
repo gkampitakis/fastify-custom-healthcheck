@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.1...v1.1.2) (2020-08-22)
+
+
+### Bug Fixes
+
+* collect test coverage and cover 100% ([e82d349](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/e82d3491ad4ee5c522137ba056209a8f248bbc73))
+
 ## [1.1.1](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.0...v1.1.1) (2020-08-20)
 
 
