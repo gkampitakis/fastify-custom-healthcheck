@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.2...v1.1.3) (2020-09-17)
+
+
+### Bug Fixes
+
+* add support for version 10,12,14 ([8fd50b9](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/8fd50b9e40907bdf9cac253d162f48914ce773f6))
+
 ## [1.1.2](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.1...v1.1.2) (2020-08-22)
 
 
