@@ -45,7 +45,7 @@
     "nodemon": "^2.0.6",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.2.1",
-    "semistandard": "^14.2.3",
+    "semistandard": "^16.0.0",
     "snazzy": "^9.0.0"
   },
   "jest": {
