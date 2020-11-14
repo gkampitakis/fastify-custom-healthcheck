@@ -104,3 +104,7 @@ You can also check an [example](./example) usage.
 ### Issues
 
 For any [issues](https://github.com/gkampitakis/fastify-custom-healthcheck/issues).
+
+## License 
+
+MIT License
