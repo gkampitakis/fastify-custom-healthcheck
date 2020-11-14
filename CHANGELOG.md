@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.4...v1.1.5) (2020-11-14)
+
+
+### Bug Fixes
+
+* add MIT license and update dependenies ([cd0b36b](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/cd0b36b7a3b4d784de3f71391ff442d1deaa66b4))
+
 ## [1.1.4](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.3...v1.1.4) (2020-09-18)
 
 
