@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.5...v1.2.0) (2020-11-16)
+
+
+### Features
+
+* add missing fastify schema on health route ([2196336](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/2196336b485b52b2e35203d82e0193b230745ccf))
+* remove healthChecks registry from global scope to plugin ([841a3f9](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/841a3f96c9833d3456c8ccf9d5935991a202c3b6))
+
 ## [1.1.5](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.4...v1.1.5) (2020-11-14)
 
 
