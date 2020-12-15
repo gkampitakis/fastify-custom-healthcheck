@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.2.0...v1.2.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* remove healthChecks as required field in response ([7a07cd7](https://github.com/gkampitakis/fastify-custom-healthcheck/commit/7a07cd7dba97b60dd15e72377b4fc7895ad992bc))
+
 # [1.2.0](https://github.com/gkampitakis/fastify-custom-healthcheck/compare/v1.1.5...v1.2.0) (2020-11-16)
 
 
