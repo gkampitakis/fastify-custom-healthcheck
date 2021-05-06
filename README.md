@@ -93,10 +93,6 @@ fastify.addCustomHealthCheck(label, () => {}, { value: true });
 
 This module is inspired by [server-health](https://www.npmjs.com/package/server-health) and the need of having this functionality in fastify.
 
-### Changelog
-
-[CHANGELOG.md](./CHANGELOG.md)
-
 ### Example
 
 You can also check an [example](./example) usage.
