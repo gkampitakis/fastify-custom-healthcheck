@@ -34,7 +34,7 @@
   "devDependencies": {
     "fastify": "^3.8.0",
     "jest": "^27.0.3",
-    "mongodb": "^3.6.3",
+    "mongodb": "^4.0.1",
     "semistandard": "^16.0.0",
     "snazzy": "^9.0.0"
   },
