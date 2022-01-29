@@ -53,7 +53,7 @@ fastify.register(customHealthCheck, {
 After registering plugin you can use the decorator for adding custom health checks.
 
 ```javascript
-fastify.addCustomHealthCheck(label, () => {}, { value: true });
+fastify.addHealthCheck(label, () => {}, { value: true });
 ```
 
 ### decorator options
