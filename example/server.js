@@ -43,6 +43,6 @@ fastify.register(customHealthCheck, {
     }, { value: false });
   });
 
-fastify.listen(5000, () => {
+fastify.listen({ port: 5000 }).then(() => {
   console.log('🚀 Example Server listening on port 5000');
 });
