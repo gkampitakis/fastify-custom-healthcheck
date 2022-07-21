@@ -1,6 +1,6 @@
 {
   "name": "fastify-custom-healthcheck",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Fastify plugin that allows to add custom health checks in your server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
