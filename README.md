@@ -47,6 +47,8 @@ fastify.register(customHealthCheck, {
 -   `info`: object where you can define custom information you would like to include in healthcheck response object.
 -   exposeFailure: Flag that enables additional information to be presented in health check object when a check fails.
     -   default value: `false`
+-   schema: If set to true, default schema is used for the route definition, if to false - no schema. If object is passed, it will be used as a schema. This can be used to enable support for custom type providers, e. g. zod or typebox. 
+    -   default value: `true`
 
 ### Decorator
 
