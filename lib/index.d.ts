@@ -8,6 +8,8 @@ export interface CustomHealthCheckOptions {
   info?: Record<string, string>;
   /** Flag that enables additional information to be presented in health check object when a check fails. */
   exposeFailure?: boolean;
+  /** If set to true, default schema is used for the route definition, if to false - no schema. If object is passed, it will be used as a schema. Default value is "true" */
+  schema?: boolean | Record<string, any>
 }
 
 declare module 'fastify' {
