@@ -83,6 +83,10 @@ fastify.addHealthCheck(label, () => {}, { value: true });
       "heapUsed": 16499104,
       "external": 20754444,
       "arrayBuffers": 19273278
+    },
+    "cpu": {
+      "user": 174222,
+      "system": 53291
     }
   },
   "info": {
