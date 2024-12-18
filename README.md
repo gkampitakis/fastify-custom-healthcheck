@@ -49,6 +49,8 @@ fastify.register(customHealthCheck, {
     -   default value: `false`
 -   schema: If set to true, default schema is used for the route definition, if to false - no schema. If object is passed, it will be used as a schema. This can be used to enable support for custom type providers, e. g. zod or typebox. 
     -   default value: `true`
+-   hideResponse: If set to true, when your system gets hit with the path, fastify is not going to log that it was hit. This makes the logs cleaner, but also eliminates any logs generated. It has no bearing on the response of the plugin, however.
+    -   default value: `false`
 
 ### Decorator
 
@@ -86,7 +88,7 @@ fastify.addHealthCheck(label, () => {}, { value: true });
     }
   },
   "info": {
-    "example": "Response",
+    "example": "Response"
   }
 }
 ```
