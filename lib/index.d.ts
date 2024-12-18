@@ -1,4 +1,6 @@
-import { FastifyPlugin } from 'fastify';
+import {
+  FastifyPluginCallback
+} from "fastify";
 import { addHealthCheck } from './src/customHealthCheck';
 
 export interface CustomHealthCheckOptions {
@@ -6,9 +8,13 @@ export interface CustomHealthCheckOptions {
   path?: string;
   /** Object where you can define custom information you would like to include in healthcheck response */
   info?: Record<string, string>;
-  /** Flag that enables additional information to be presented in health check object when a check fails. */
+  /** Flag that enables additional information
+   * to be presented in a health check object when a check fails. */
   exposeFailure?: boolean;
-  /** If set to true, default schema is used for the route definition, if to false - no schema. If object is passed, it will be used as a schema. Default value is "true" */
+  /** If set to true, default schema is used for the route definition,
+   * if to false - no schema.
+   * If an object is passed, it will be used as a schema.
+   * The Default value is "true" */
   schema?: boolean | Record<string, any>
   /** If set to true, when your system gets hit with the path,
    * fastify is not going to log that it was hit.
@@ -23,5 +29,5 @@ declare module 'fastify' {
   }
 }
 
-declare const customHealthCheck: FastifyPlugin<CustomHealthCheckOptions>;
+declare const customHealthCheck: FastifyPluginCallback<CustomHealthCheckOptions>;
 export default customHealthCheck;
