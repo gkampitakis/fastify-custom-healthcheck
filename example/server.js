@@ -1,11 +1,14 @@
-const fastify = require('fastify')();
+const fastify = require('fastify')({
+  logger: true // this is needed to show the example of 'hideResponse'
+});
 const MongoClient = require('mongodb').MongoClient;
 const customHealthCheck = require('../lib');
 const url = 'mongodb://localhost:27017';
 const _package = require('../package.json');
 
 fastify.register(customHealthCheck, {
-  path: '/custom/path/health',
+  path: '/health',
+  hideResponse: true, // remove this or set to false to show the response in the log
   info: {
     example: 'Custom Info',
     env: process.env.NODE_ENV,
