@@ -1,4 +1,4 @@
-import { FastifyPlugin } from 'fastify';
+import { FastifyPluginCallback } from 'fastify';
 import { addHealthCheck } from './src/customHealthCheck';
 
 export interface CustomHealthCheckOptions {
@@ -9,7 +9,7 @@ export interface CustomHealthCheckOptions {
   /** Flag that enables additional information to be presented in health check object when a check fails. */
   exposeFailure?: boolean;
   /** If set to true, default schema is used for the route definition, if to false - no schema. If object is passed, it will be used as a schema. Default value is "true" */
-  schema?: boolean | Record<string, any>
+  schema?: boolean | Record<string, any>;
 }
 
 declare module 'fastify' {
@@ -18,5 +18,5 @@ declare module 'fastify' {
   }
 }
 
-declare const customHealthCheck: FastifyPlugin<CustomHealthCheckOptions>;
+declare const customHealthCheck: FastifyPluginCallback<CustomHealthCheckOptions>;
 export default customHealthCheck;
