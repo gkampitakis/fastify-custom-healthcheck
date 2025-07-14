@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "fastify": "^5.2.0",
-    "fastify-type-provider-zod": "^4.0.2",
+    "fastify-type-provider-zod": "^5.0.2",
     "jest": "^29.7.0",
     "mongodb": "^4.7.0",
     "semistandard": "^17.0.0",
